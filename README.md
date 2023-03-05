@@ -1,5 +1,5 @@
 # Test-Cases v1
-*These are Test Cases made by me in the Manual and Automatic Software Testing course.*
+*These are Test Cases made by me in the Manual and Automation Software Testing course.*
 
 ID: LT1
 
@@ -59,10 +59,58 @@ Check if the search working correctly.
 3. Click to search button
       
 ## Expected Result: 
-The results must be displayed only with the keyword entered in the       search.
+The results must be displayed only with the keyword entered in the search.
 
 ## Test data: 
 Keywords: bulb, doorbell, ball, rj-45, glasses
     
 ## Status: New, In Progress, Passed or Faild
 
+ID: RN1
+
+## Title:
+User can register to web site with true data
+     
+## Description: 
+User create a new account, using real data (correct format email). 
+     
+## Steps to reproduce: 
+1. Go to www.website.com/register
+2. Add a correct data - e-mail/username/password/confirm password
+3. Click to Register button
+
+## Expected Result: 
+User can register on www.website.com with a true data.
+
+## Test data: 
+e-mail: true@mail.com  
+username: Gheorghe
+password: 1234567890
+confirm password: 1234567890
+    
+## Status: New, In Progress, Passed or Faild
+
+
+ID: RN2
+
+## Title:
+The user cannot register with a fake email
+     
+## Description: 
+The user cannot register with an e-mail does not match the email address format.
+     
+## Steps to reproduce: 
+1. Go to www.website.com/register
+2. Add the data in the required fields: e-mail/username/password/confirm password
+3. Click to Register button
+
+## Expected Result: 
+The user receives a message that it is not possible to register with this e-mail format.
+
+## Test data: 
+e-mail: qwe asd zxc
+username: Gheorghe
+password: 1234567890
+confirm password: 1234567890
+    
+## Status: New, In Progress, Passed or Faild
